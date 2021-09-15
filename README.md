@@ -6,7 +6,7 @@ This project aims to ease the use of the German postal service (`Deutsche Post`)
 
 ----
 
-Current project phase:  **Information Gathering / Wiki Setup**
+Project Phase:  **Information Gathering / Wiki Setup**
 
 ----
 
