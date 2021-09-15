@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang = 'en' dir = 'ltr'>
+   <head>
+      <meta charset = 'utf-8'>
+      <title>Overview &#8612; Requests</title>
+      <link rel = 'stylesheet' href = '../Styles/Base.css'>
+   </head>
+   <body>
+      <div id = 'main'>
+         <h2>Request Overview</h2>
+         <div class = 'requestlist'>
+            <div>
+               <div>Type</div>
+               <div>Description</div>
+               <div>URL</div>
+            </div>
+
+            <!-- Token -->
+            <div class = 'category'>Token</div>
+            <div>
+               <div data-type = 'GET'>GET</div>
+               <div>Request token with credentials.</div>
+               <div>/v1/auth/accesstoken</div>
+            </div>
+            <div>
+               <div data-type = 'GET'>GET</div>
+               <div>Retrieve token info.</div>
+               <div>/v1/auth/accesstoken/info</div>
+            </div>
+            <div>
+               <div data-type = 'GET'>GET</div>
+               <div>Revoke a token.</div>
+               <div>/v1/auth/accesstoken/revoke</div>
+            </div>
+
+            <!-- Order -->
+            <div class = 'category'>Order</div>
+            <div>
+               <div data-type = 'POST'>POST</div>
+               <div>Create order.</div>
+               <div>/dpi/shipping/v1/orders</div>
+            </div>
+            <div>
+               <div data-type = 'GET'>GET</div>
+               <div>Find an order by it's id.</div>
+               <div>/dpi/shipping/v1/orders/<span>orderId</span></div>
+            </div>
+            <div>
+               <div data-type = 'POST'>POST</div>
+               <div>Finalize an open order.</div>
+               <div>/dpi/shipping/v1/orders/<span>orderId</span>/finalization</div>
+            </div>
+            <div>
+               <div data-type = 'POST'>POST</div>
+               <div>Add items to an order.</div>
+               <div>/dpi/shipping/v1/orders/<span>orderId</span>/items</div>
+            </div>
+            <div>
+               <div data-type = 'GET'>GET</div>
+               <div>Retrieve an order's shipments.</div>
+               <div>/dpi/shipping/v1/orders/<span>orderId</span>/shipments</div>
+            </div>
+
+            <!-- Item -->
+            <div class = 'category'>Item</div>
+            <div>
+               <div data-type = 'GET'>GET</div>
+               <div>Find an item by it's id.</div>
+               <div>/dpi/shipping/v1/items/<span>itemId</span></div>
+            </div>
+            <div>
+               <div data-type = 'PUT'>PUT</div>
+               <div>Update an items information.</div>
+               <div>/dpi/shipping/v1/items/<span>itemId</span></div>
+            </div>
+            <div>
+               <div data-type = 'DELETE'>DELETE</div>
+               <div>Delete an item.</div>
+               <div>/dpi/shipping/v1/items/<span>itemId</span></div>
+            </div>
+            <div>
+               <div data-type = 'GET'>GET</div>
+               <div>Retrieve an item's label.</div>
+               <div>/dpi/shipping/v1/items/<span>itemId</span>/label</div>
+            </div>
+
+            <!-- Shipment -->
+            <div class = 'category'>Shipment</div>
+            <div>
+               <div data-type = 'GET'>GET</div>
+               <div>Retrieve data for the given AWB id.</div>
+               <div>/dpi/shipping/v1/shipments/<span>awb</span></div>
+            </div>
+            <div>
+               <div data-type = 'GET'>GET</div>
+               <div>Retrive labels for the given AWB id.</div>
+               <div>/dpi/shipping/v1/shipments/<span>awb</span>/awblabels</div>
+            </div>
+            <div>
+               <div data-type = 'GET'>GET</div>
+               <div>Retrive items for the given AWB id.</div>
+               <div>/dpi/shipping/v1/shipments/<span>awb</span>/itemlabels</div>
+            </div>
+
+            <!-- AWB -->
+            <div class = 'category'>AWB</div>
+            <div>
+               <div data-type = 'POST'>POST</div>
+               <div>Create an air waybill.</div>
+               <div>/dpi/shipping/v1/awbs</div>
+            </div>
+
+            <!-- Tracking -->
+            <div class = 'category'>Tracking</div>
+            <div>
+               <div data-type = 'GET'>GET</div>
+               <div>Retrieve tracking data for the given barcode.</div>
+               <div>/dpi/tracking/v1/trackings/<span>barcode</span></div>
+            </div>
+            <div>
+               <div data-type = 'GET'>GET</div>
+               <div>Retrieve tracking data for the given shipment.</div>
+               <div>/dpi/tracking/v1/trackings/awb/<span>awb</span></div>
+            </div>
+
+            <!-- Validation -->
+            <div class = 'category'>Validation</div>
+            <div>
+               <div data-type = 'POST'>POST</div>
+               <div>Validate order items.</div>
+               <div>/dpi/shipping/v1/validation</div>
+            </div>
+
+            <!-- Customer -->
+            <div class = 'category'>Customer</div>
+            <div>
+               <div data-type = 'POST'>POST</div>
+               <div>Create an item a customer.</div>
+               <div>/dpi/shipping/v1/customers/<span>customerEkp</span>/items</div>
+            </div>
+            <div>
+               <div data-type = 'POST'>POST</div>
+               <div>Find a customsers items.</div>
+               <div>/dpi/shipping/v1/customers/<span>customerEkp</span>/items</div>
+            </div>
+            <div>
+               <div data-type = 'GET'>GET</div>
+               <div>Retrieve data for a customer's item.</div>
+               <div>/customers/<span>customerEkp</span>/items/<span>barcode</span></div>
+            </div>
+            <div>
+               <div data-type = 'GET'>GET</div>
+               <div>Retrieve the label for a customer's item.</div>
+               <div>/dpi/shipping/v1/customers/<span>customerEkp</span>/items/<span>barcode</span>/label</div>
+            </div>
+            <div>
+               <div data-type = 'POST'>POST</div>
+               <div>Create an order from a customers items.</div>
+               <div>/dpi/shipping/v1/customers/<span>customerEkp</span>/orders</div>
+            </div>
+            <div>
+               <div data-type = 'POST'>POST</div>
+               <div>Create a refund item for a customer.</div>
+               <div>/dpi/shipping/v1/customers/<span>customerEkp</span>/returnitems</div>
+            </div>
+            <div>
+               <div data-type = 'GET'>GET</div>
+               <div>Create a label for a to be refunded item.</div>
+               <div>/dpi/shipping/v1/customers/<span>customerEkp</span>/returnitems/<span>barcode</span>/label</div>
+            </div>
+
+         </div>
+      </div>
+   </body>
+</html>

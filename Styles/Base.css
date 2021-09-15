@@ -1,0 +1,155 @@
+
+root {
+   scrollbar-width: none;
+}
+
+::-webkit-scrollbar { display: none; }
+
+html {
+   font-family: monospace;
+   font-size: 16px;
+   font-weight: bold;
+   color: #e0e0e0;
+   background-color: #1b1d25;
+}
+
+body {
+   width: 100vw;
+   min-height: 100vh;
+   height: fit-content;
+   overflow: scroll;
+   user-select: all;
+   display: flex;
+   justify-content: center;
+   padding: 20px 0;
+}
+
+* {
+   margin: 0px;
+   padding: 0px;
+   border-spacing: 0;
+   outline: none;
+   user-select: none;
+}
+
+#main {
+   width: fit-content;
+   height: fit-content;
+   user-select: all;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex-wrap: nowrap;
+   gap: 10px;
+}
+
+h2 {
+   color: #ffcc00;
+}
+
+
+.requestlist {
+   width: fit-content;
+   border-radius: 8px;
+   border: 1px solid #ffffff2e;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+}
+
+.requestlist > .category {
+   display: flex;
+   align-content: center;
+   justify-content: center;
+   padding: 12px;
+   color: white;
+   font-size: 20px;
+   background-color: #20222b;
+}
+
+.requestlist > div {
+   display: flex;
+   flex-wrap: nowrap;
+}
+
+.requestlist > div:first-child > div {
+   text-align: center;
+}
+
+.requestlist > div > div:nth-child(2) {
+   width: 360px;
+}
+
+.requestlist > div > div:nth-child(3) {
+   width: 570px;
+}
+
+.requestlist > div:nth-child(n+2) > div:nth-child(3) {
+   color: #585238;
+}
+
+.requestlist > div > div {
+   padding: 7px 12px;
+}
+
+.requestlist > div > div:first-child {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.requestlist > div > div:not(:last-child) {
+   border-right: 1px solid #ffffff14;
+}
+
+.requestlist > div:not(:last-child) {
+   border-bottom: 1px solid #ffffff2e;
+}
+
+.requestlist > div > div:first-child {
+   width: 100px;
+}
+
+.requestlist > div:not(:first-child) > div:nth-child(3) {
+   user-select: all;
+   display: flex;
+   align-items: center;
+}
+
+.requestlist > div:not(:first-child) > div:nth-child(3) > span{
+   user-select: all;
+}
+
+.requestlist > div:nth-child(2n+2) > div:nth-child(3) {
+   filter: brightness(1.2);
+}
+
+
+.requestlist > div:not(:first-child) > div:nth-child(3) > span {
+   color: #c71919;
+}
+
+.requestlist > div:not(:first-child) > div:nth-child(2) {
+   color: #adabab;
+   font-weight: lighter;
+}
+
+.requestlist > div:nth-child(2n+2) > div:nth-child(2) {
+   filter: brightness(1.3);
+}
+
+.requestlist > div > div:first-child[data-type='GET'] {
+   color: #148814;
+}
+
+.requestlist > div > div:first-child[data-type='POST'] {
+   color: #3488d0;
+}
+
+.requestlist > div > div:first-child[data-type='PUT'] {
+   color: #900b90;
+}
+
+.requestlist > div > div:first-child[data-type='DELETE'] {
+   color: #bf1212;
+}

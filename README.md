@@ -1,11 +1,13 @@
 # DeutschePost
 
-This project aims to ease the use of German postal service (`Deutsche Post`) API.
+Information on the behavior of the German postal service (`Deutsche Post`) API.
 
-<br>
+---
 
-----
+The API utilizes **OAuth 2.0 tokens** that<br> can be generated with your credentials.
 
-Current project phase:  **Planning**
+---
 
-----
+**Content:**
++ [API Servers](General/Servers.md)
++ [List of Requests](Requests/Overview.html)
