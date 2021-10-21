@@ -1,6 +1,7 @@
 # DeutschePost
 
-Information on the behavior of the German postal service (`Deutsche Post`) API.
+Information on the behavior of the German postal service API.<br>
+(`Deutsche Post`)
 
 ---
 
