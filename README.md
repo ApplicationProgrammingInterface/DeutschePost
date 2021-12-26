@@ -4,7 +4,8 @@
 
 # DeutschePost
 
-This project aims to ease the use of the German postal service (`Deutsche Post`) API.
+This project's aims is to ease the use of the <br>
+German postal service (`Deutsche Post`) API.
 
 <br>
 
