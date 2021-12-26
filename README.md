@@ -15,5 +15,6 @@ Project Phase:  **Information Gathering / Wiki Setup**
 
 ----
 
-**Contents:**
-+ [API Documentation]
+**[API Documentation]**
+
+---
