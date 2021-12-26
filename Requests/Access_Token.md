@@ -18,7 +18,10 @@
 
 To request a **Token** you have to encode your **Credentials**.
 
-`Authentication-Code = Base64( 'Client-Id' + ':' + 'Client-Secret' )`
+`Authentication-Code`<br>
+  ` = Base64( 'Client-Id' + ':' + 'Client-Secret' )`
+
+<br>
 
 ##### Example
 
@@ -41,6 +44,8 @@ To request a **Token** you have to encode your **Credentials**.
     </tr>
 </table>
 
+<br>
+
 Now simply send a **GET** request to the <br>
 **[Endpoint]** with the following properties:
 
@@ -59,11 +64,13 @@ Now simply send a **GET** request to the <br>
     </tr>
 </table>
 
+<br>
+
 A ***successful*** response will be in the format of:
 
 ```json
 {
-    "access_token" : "hk7jh654g46hg45465hhgo56o54o6543i53o4g35pipi87g45i6gi" ,
+    "access_token" : "hk7jh654g46hg4546..." ,
     "token_type"   : "Bearer" ,
     "expires_in"   : 18000 ,
     "scope"        : "dpilabel dpitracking"
