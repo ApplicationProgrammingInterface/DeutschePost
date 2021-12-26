@@ -1,8 +1,8 @@
 
 [Credentials]: General/Credentials.md
 [API Servers]: General/Servers.md
-[Rate Limits]: General/Rate%20Limits.md
-[Access Token]: Requests/Access%20Token.md
+[Rate Limits]: General/Rate_Limits.md
+[Access Token]: Requests/Access_Token.md
 [List of Requests]: Requests/Overview.md
 
 [Original]: https://api-qa.deutschepost.com/dpi-apidoc/
